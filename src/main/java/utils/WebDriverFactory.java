@@ -24,6 +24,9 @@ public class WebDriverFactory {
                 opts.addArguments("--disable-notifications");
                 opts.addArguments("--disable-popup-blocking");
                 opts.addArguments("--disable-extensions");
+                opts.addArguments("--headless=new");
+                opts.addArguments("--no-sandbox");
+                opts.addArguments("--disable-dev-shm-usage");
                 return new ChromeDriver(opts);
             case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
