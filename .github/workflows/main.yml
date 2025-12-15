@@ -33,10 +33,4 @@ jobs:
 
     - name: Upload TestNG Reports
       if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: testng-reports
-        path: target/surefire-reports
-    - name: Run specific TestNG suite
-        run: mvn clean test -Dsurefire.suiteXmlFiles=pom.xml
-    
+      uses:
