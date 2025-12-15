@@ -1,0 +1,2 @@
+Place your Excel test data file named testdata.xlsx in this directory if needed by tests.
+This repo doesn't include binary Excel files in the example workspace.
